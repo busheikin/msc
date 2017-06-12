@@ -1,0 +1,19 @@
+.bodyWrap {
+  min-height: 100%;
+  padding-top: $navbar-height;
+    
+  @include media-breakpoint-down(sm){
+    padding-top: $navbar-height-mobile;
+  }
+}
+
+
+.mainContent {
+  min-height: 100%;
+  overflow: auto;
+  padding-bottom: $footer-height + $footer-copyright-height;
+}
+
+.container-fluid {
+  width: 100%;
+}

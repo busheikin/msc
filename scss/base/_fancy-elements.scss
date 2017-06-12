@@ -1,0 +1,40 @@
+.fancy-link-sm {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: $gray-dark;
+  
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+.fancy-text-sm {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.fancy-h1 {
+  border-bottom: 4px solid $gray-lightest;
+  padding-bottom: 1rem;
+}
+
+.fancy-hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 4rem;
+  border-width: 2px;
+  border-color: $gray-lightest;
+}
+
+.fancy-hr-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  width: 4rem;
+  border-width: 2px;
+  border-color: $gray-lighter;
+}

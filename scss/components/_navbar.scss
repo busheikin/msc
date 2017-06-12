@@ -1,0 +1,134 @@
+// Navbar! Base styles - some will be overridden below
+
+.navbar-container {
+  position: fixed;
+  padding: 0 $navbar-height/3;
+  height: $navbar-height;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #fff;
+  @include clearfix;
+  z-index: $zindex-navbar;
+  
+  @include media-breakpoint-down(sm){
+    padding: 0;
+  }
+  
+}
+
+.navbar-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-logo {
+  display: inline-block;
+}
+
+.navbar-logo img {
+  display: inline-block;
+  margin-top: $navbar-height/3;
+  margin-bottom: $navbar-height/3;  
+  height: $navbar-height/3;
+}
+
+#primary-menu .menu-item{
+  text-align: center;
+  
+  a {
+    display: block;
+  }
+}
+
+.navbar-header {
+  width: 100%;
+  position: relative;
+}
+
+.navbar-list-container {
+  background: transparentize($gray-lightest, .04);
+  border-bottom: 1px solid $gray-lighter;
+}
+
+#primary-menu .menu-item > a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $gray-dark;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#primary-menu .menu-item {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+#primary-menu .menu-item:last-child {
+  border-bottom: 0;
+}
+
+
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// Bootstrap JavaScript plugin.
+
+.navbar-toggle {
+  padding: .5rem .75rem;
+  font-size: $font-size-lg;
+  line-height: 1;
+  background: none;
+  border: 0;
+  height: $navbar-height;
+  position: absolute;
+  right: 0;
+  color: $gray-lighter;
+  transition: color 0.2s ease;
+  outline: none !important;
+  
+  &[aria-expanded="true"]{
+    color: $brand-primary;
+  }
+}
+
+// Navbar collapse (body)
+
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: $grid-gutter-outer;
+  padding-left:  $grid-gutter-outer;
+  border-top: 1px solid $gray-lighter;
+  @include clearfix;
+  -webkit-overflow-scrolling: touch;
+
+  &.in {
+    overflow-y: auto;
+  }
+
+  @include media-breakpoint-up(md){
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+
+    &.collapse {
+      height: auto !important;
+      padding-bottom: 0; // Override default setting
+      overflow: visible !important;
+    }
+
+    &.in {
+      overflow-y: visible;
+    }
+
+    // Undo the collapse side padding for navbars with containers to ensure
+    // alignment of right-aligned contents.
+    .navbar-fixed-top &,
+    .navbar-static-top &,
+    .navbar-fixed-bottom & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+

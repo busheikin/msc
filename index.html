@@ -1,0 +1,81 @@
+<!DOCTYPE html(lang='en')>
+<head>
+  <!-- Required meta tags always come first-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bodyWrap">
+  <div class="mainContent">
+    <!--NAVBAR-->
+    <nav class="navbar-container container">
+      <div class="navbar-header">
+        <div class="navbar-logo"><a href="index.html"><img src="img/logo-horizontal.svg"/></a></div>
+        <button type="button" data-toggle="collapse" data-target="#navbar-nav" class="navbar-toggle">&#9776;</button>
+      </div>
+      <div id="navbar-nav" class="collapse navbar-collapse navbar-list-container">
+        <ul id="primary-menu" class="navbar-list">
+          <li class="menu-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="menu-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="menu-item"><a href="features.html" class="nav-link">Features</a></li>
+          <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="menu-item"><a href="book-demo.html" class="nav-link">Demo</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--MAIN-->
+  </div>
+  <!--FOOTER-->
+  <div class="footer">
+    <div class="container-fluid footer-container">
+      <div class="container footer-content">
+        <div class="row">
+          <div class="col-lg-1 col-sm-2 footer-logo"><img src="img/logo-ao-insignia.svg"/></div>
+          <div class="col-lg-3 col-sm-5 footer-list"><span class="u-text-b">Ample Organics</span>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="book-demo.html">Demo</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-5 footer-list"><span class="u-text-b">Connect</span>
+            <ul>
+              <li><a href="https://www.facebook.com/ampleorganics">Facebook</a></li>
+              <li><a href="https://twitter.com/ampleorganics">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/ample-organics">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container u-padding-x-0"><span>© 2014 Ample Organics Incorporated</span></div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+  <script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/unslider-min.js"></script>
+  <script>
+    jQuery(document).ready(function($) {
+    $('.pageQuote-slider').unslider({
+      autoplay: true,
+      delay: 9000,
+      keys: false,
+      arrows: false
+    });
+    $('.features-slider').unslider({
+      keys: false,
+      arrows: false
+    });
+    });
+    
+  </script>
+  <script>new WOW().init();</script>
+</body>

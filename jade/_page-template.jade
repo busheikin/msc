@@ -1,0 +1,45 @@
+doctype html(lang='en')
+head
+  // Required meta tags always come first
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+
+  title
+    block title
+  link(rel='stylesheet', href='style.css')
+
+body.bodyWrap
+  .mainContent
+    //NAVBAR
+    include _navbar.jade
+
+    //MAIN
+    block body
+
+  //FOOTER
+  include _footer.jade
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  
+  script(src='http://stephband.info/jquery.event.move/js/jquery.event.move.js')
+  script(src='http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js')
+
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  script(src='js/wow.min.js')
+  script(src='js/unslider-min.js')
+  script.
+    jQuery(document).ready(function($) {
+    $('.pageQuote-slider').unslider({
+      autoplay: true,
+      delay: 9000,
+      keys: false,
+      arrows: false
+    });
+    $('.features-slider').unslider({
+      keys: false,
+      arrows: false
+    });
+    });
+
+  script
+    | new WOW().init();

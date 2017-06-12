@@ -1,0 +1,154 @@
+.hero-container {
+  border-bottom: 2px solid $brand-primary;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-xl {
+  @include media-breakpoint-up(md){
+    max-height: 100%;
+    min-height: 450px;
+    height: 90vh;
+  }
+}
+
+.hero-content-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.hero-content-container.hero-half {
+  //half at md and up only
+  @include media-breakpoint-up(md){
+    width: 50%;
+  }
+}
+
+.hero-darkOverlay {
+  background: transparentize($brand-dark,.2);
+}
+
+.hero-content-left {
+  @include media-breakpoint-up(md){
+    margin-left: 0;
+    margin-right: auto;
+    
+    & .hero-content {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}  
+
+.hero-content-right {
+  @include media-breakpoint-up(md){
+    margin-right: 0;
+    margin-left: auto;
+        
+    & .hero-content {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+.hero-content {
+  // default for xs, small
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: $grid-gutter-outer;
+  padding-right: $grid-gutter-outer;
+
+  & h1, h2, h3, h4, p {
+    color: #fff;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  & .btn {
+    margin-top: 1rem;
+  }
+
+  @include media-breakpoint-up(sm){
+    width: $container-sm-max;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include media-breakpoint-up(md){
+    width: $container-md-max;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: $grid-gutter-width;
+  }    
+
+  @include media-breakpoint-up(lg){
+    width: $container-lg-max;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @include media-breakpoint-up(xl){
+    width: $container-xl-max;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  @include media-breakpoint-up(xxl){
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.hero-half > .hero-content {
+
+  @include media-breakpoint-up(md){
+    width: $container-md-max/2;
+  }    
+
+  @include media-breakpoint-up(lg){
+    width: $container-lg-max/2;
+  }
+
+  @include media-breakpoint-up(xl){
+    width: $container-xl-max/2;
+  }
+}
+
+.hero-caption {
+    font-weight: $font-weight-light;
+    line-height: $line-height-sm;
+  
+  @include media-breakpoint-down(sm){
+    font-size: $font-size-lg;
+  }
+
+  @include media-breakpoint-down(md){
+    font-size: 20px;
+  }
+  
+  @include media-breakpoint-up(lg){
+    font-size: 23px;
+  }
+  
+  @include media-breakpoint-up(xl){
+    font-size: 25px;
+  }
+}
+
+.hero-title-jumbo {
+  font-size: $font-size-xxl;
+  
+  @include media-breakpoint-up(lg){
+    font-size: $font-size-jumbo-2;
+  }
+  
+  @include media-breakpoint-up(xl){
+    font-size: $font-size-jumbo-1;
+  }
+}
+
+.hero-mj {
+  background: url("img/bg-mj.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,57 @@
+// Call-to-action
+
+.cta-container {
+  background: $gradient-purple;
+}
+
+.cta-content {
+  text-align: center;
+  
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+}
+  
+.cta-text {
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-light;
+  color: #fff;
+  padding-bottom: 0;
+  border-bottom: 0;
+  line-height: 1;
+  vertical-align: -10px;
+  
+  @include media-breakpoint-down(md){
+    font-size: $font-size-xl;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  @include media-breakpoint-up(lg){
+    margin-right: 3rem;
+  }
+}
+
+
+.cta-alt {
+  padding: $spacer;
+  background: $gray-lightest;
+  border-bottom: 2px solid $gray-lighter;
+  margin-bottom: $spacer;
+  
+  img {
+    height: 40px;
+    float: left;
+    margin-right: $spacer;
+    margin-bottom: $spacer;
+  }
+  
+  p {
+    font-style: italic;
+    color: $gray;
+    margin-bottom: 0;
+  }
+  
+}

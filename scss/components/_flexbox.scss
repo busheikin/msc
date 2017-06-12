@@ -1,0 +1,17 @@
+// Flexbox utils
+
+.flex-row-md-up {
+  @include media-breakpoint-up(md){
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-justify-c {
+  justify-content: center;
+}
