@@ -1,6 +1,7 @@
 .footer-container {
   background: $brand-dark;
-  color: rgba(255,255,255,0.5);
+  color: #fff;
+  min-height: $footer-height;
   
   .container {
     padding-top: 2rem;
@@ -10,13 +11,13 @@
 
 .footer {
   width: 100%;
-  margin-top: - ($footer-height + $footer-copyright-height);
-  min-height: $footer-height + $footer-copyright-height;
+  margin-top: - ($footer-height);
+  min-height: $footer-height;
   a {
-    color: rgba(255,255,255,0.5);
+    color: #ffffff;
     
     &:hover {
-      color: rgba(255,255,255,1);
+      color: #ffffff;
     }
   }
 
@@ -24,8 +25,16 @@
 
 .footer-list,
 #menu-footer-menu {
+  border-top: 4px solid #ffffff;
+  padding-top: $spacer-v/2;
   padding-left: 0;
   list-style: none;
+  line-height: 2;
+}
+
+.footer-list ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .footer-list-container {
@@ -62,18 +71,6 @@
   
   & + & {
     margin-left: 3px;
-  }
-}
-
-.footer-copyright {
-  height: $footer-copyright-height;
-  line-height: $footer-copyright-height;
-  font-size: $font-size-sm;
-  color: rgba(255,255,255,0.5);
-  background: $brand-darker;
-  
-  @include media-breakpoint-up(md){
-    text-align: right;
   }
 }
 

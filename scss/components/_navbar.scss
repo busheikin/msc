@@ -1,26 +1,17 @@
 // Navbar! Base styles - some will be overridden below
 
+
+// First off, the actual bar
+
 .navbar-container {
-  position: fixed;
-  padding: 0 $navbar-height/3;
+  position: absolute;
+  padding: 0 $grid-gutter-outer;
   height: $navbar-height;
   left: 0;
-  top: 0;
+  top: 4px;
   right: 0;
-  background: #fff;
+  background: $gray-lightest;
   @include clearfix;
-  z-index: $zindex-navbar;
-  
-  @include media-breakpoint-down(sm){
-    padding: 0;
-  }
-  
-}
-
-.navbar-list {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
 }
 
 .navbar-logo {
@@ -34,34 +25,79 @@
   height: $navbar-height/3;
 }
 
-#primary-menu .menu-item{
-  text-align: center;
-  
-  a {
-    display: block;
-  }
-}
-
 .navbar-header {
   width: 100%;
   position: relative;
 }
 
-.navbar-list-container {
-  background: transparentize($gray-lightest, .04);
-  border-bottom: 1px solid $gray-lighter;
+
+// Next, The collapsable pane
+
+.navbar-collapse {
+  overflow-x: visible;
+  -webkit-overflow-scrolling: none;
+  position: fixed;
+  background: transparentize($brand-darker,.01);
+  border-top: 4px solid #fff;
+  position: fixed;
+  right: 0;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  transition: width .5s ease;
+  z-index: $zindex-navbar + 1;
+  max-width: 400px !important;
+}
+
+.navbar-closeToggle {
+  height: $navbar-height;
+  display: block;
+  font-size: $font-size-xl;
+  line-height: 1;
+  padding-top: ($navbar-height - $font-size-xl)/2;
+  padding-bottom: ($navbar-height - $font-size-xl)/2;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+ul.navbar-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background: #fff;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  background: transparent;
+  margin-top: 1rem;
 }
 
 #primary-menu .menu-item > a {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: $gray-dark;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  display: block;
+  padding: 1rem 2rem;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: #fff;
+  position: relative;
+  left: 0;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    text-decoration: none;
+  }
+  
+  // hover FX only on larger screens
+  @include media-breakpoint-up(md) {
+    &:hover {
+      left: .5rem;
+      color: $brand-primary;
+    }
+  }
 }
 
 #primary-menu .menu-item {
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
 #primary-menu .menu-item:last-child {
@@ -76,14 +112,18 @@
 
 .navbar-toggle {
   padding: .5rem .75rem;
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
   line-height: 1;
+  padding-top: ($navbar-height - $font-size-xl)/2;
+  padding-bottom: ($navbar-height - $font-size-xl)/2;
+  padding-left: 0;
+  padding-right: 0;
   background: none;
   border: 0;
   height: $navbar-height;
   position: absolute;
   right: 0;
-  color: $gray-lighter;
+  color: $brand-primary;
   transition: color 0.2s ease;
   outline: none !important;
   
@@ -92,43 +132,12 @@
   }
 }
 
-// Navbar collapse (body)
 
-.navbar-collapse {
-  overflow-x: visible;
-  padding-right: $grid-gutter-outer;
-  padding-left:  $grid-gutter-outer;
-  border-top: 1px solid $gray-lighter;
-  @include clearfix;
-  -webkit-overflow-scrolling: touch;
+// Prvent body scrolling when menu is open on mobile
 
-  &.in {
-    overflow-y: auto;
-  }
-
-  @include media-breakpoint-up(md){
-    width: auto;
-    border-top: 0;
-    box-shadow: none;
-
-    &.collapse {
-      height: auto !important;
-      padding-bottom: 0; // Override default setting
-      overflow: visible !important;
-    }
-
-    &.in {
-      overflow-y: visible;
-    }
-
-    // Undo the collapse side padding for navbars with containers to ensure
-    // alignment of right-aligned contents.
-    .navbar-fixed-top &,
-    .navbar-static-top &,
-    .navbar-fixed-bottom & {
-      padding-left: 0;
-      padding-right: 0;
-    }
+@include media-breakpoint-down(sm) {
+  .nav-noscroll {
+    height: 100vh;
+    overflow: hidden;
   }
 }
-

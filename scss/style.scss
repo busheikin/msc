@@ -1,9 +1,13 @@
 /*
- *Theme Name: Ample 2016
+ *Theme Name: MSC Website
  *Author: Dan Busheikin
  *Version: 1.0.0 */
 
 // Import all SCSS files to create our single CSS file
+
+// Fonts
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import "fonts/apercu";
 
 // Variables
 @import "variables";
@@ -15,17 +19,14 @@
 @import "mixins/grid-framework";
 @import "mixins/grid";
 
-// Fonts
-@import "fonts/font-lato";
-
 // Base Styles
-@import "base/normalize.scss";
-@import "base/reboot.scss";
-@import "base/elements.scss";
-@import "base/fancy-elements.scss";
+@import "base/normalize";
+@import "base/reboot";
+@import "base/elements";
+@import "base/fancy-elements";
 @import "base/grid";
 @import "base/layout";
-@import "base/utils.scss";
+@import "base/utils";
 
 // Components
 @import "components/animate";

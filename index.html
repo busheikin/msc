@@ -7,75 +7,140 @@
   <title>Home</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="bodyWrap">
-  <div class="mainContent">
-    <!--NAVBAR-->
-    <nav class="navbar-container container">
-      <div class="navbar-header">
-        <div class="navbar-logo"><a href="index.html"><img src="img/logo-horizontal.svg"/></a></div>
-        <button type="button" data-toggle="collapse" data-target="#navbar-nav" class="navbar-toggle">&#9776;</button>
-      </div>
-      <div id="navbar-nav" class="collapse navbar-collapse navbar-list-container">
-        <ul id="primary-menu" class="navbar-list">
-          <li class="menu-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="menu-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="menu-item"><a href="features.html" class="nav-link">Features</a></li>
-          <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="menu-item"><a href="book-demo.html" class="nav-link">Demo</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--MAIN-->
-  </div>
-  <!--FOOTER-->
-  <div class="footer">
-    <div class="container-fluid footer-container">
-      <div class="container footer-content">
-        <div class="row">
-          <div class="col-lg-1 col-sm-2 footer-logo"><img src="img/logo-ao-insignia.svg"/></div>
-          <div class="col-lg-3 col-sm-5 footer-list"><span class="u-text-b">Ample Organics</span>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="features.html">Features</a></li>
-              <li><a href="book-demo.html">Demo</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="careers.html">Careers</a></li>
-            </ul>
+<body>
+  <div id="bodyWrap">
+    <div class="mainContent">
+      <!--NAVBAR-->
+      <script>
+        function openNav() {
+            document.getElementById("navbar-nav").style.width = "100%";
+            document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+        }
+         
+        function closeNav() {
+            document.getElementById("navbar-nav").style.width = "0px";
+            document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+        }
+      </script>
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <div class="navbar-header">
+            <div class="navbar-logo"><a href="index.html"><img src="img/logo.png" alt="Molecular Science Corp"/></a></div>
+            <button type="button" onclick="openNav()" class="navbar-toggle"><span class="ion ion-android-menu"></span></button>
           </div>
-          <div class="col-lg-3 col-sm-5 footer-list"><span class="u-text-b">Connect</span>
-            <ul>
-              <li><a href="https://www.facebook.com/ampleorganics">Facebook</a></li>
-              <li><a href="https://twitter.com/ampleorganics">Twitter</a></li>
-              <li><a href="https://www.linkedin.com/company/ample-organics">LinkedIn</a></li>
+          <div id="navbar-nav" class="navbar-collapse navbar-list-container"><a href="javascript:void(0)" onclick="closeNav()" class="navbar-closeToggle"><span class="icon ion ion-android-close"></span></a>
+            <ul id="primary-menu" class="navbar-list">
+              <li class="menu-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="menu-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="menu-item"><a href="features.html" class="nav-link">Features</a></li>
+              <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="menu-item"><a href="book-demo.html" class="nav-link">Demo</a></li>
             </ul>
           </div>
         </div>
+      </nav>
+      <!--MAIN-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Science-first approach to cannabis production</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Our top Canadian science team focuses on utilizing advanced genetic, genomic and physiological techniques to better understand cannabis plant processes and to utilize this knowledge to enhance important strain traits. </h2>
+            <p><a href="#">> Learn more about cannabinoid science </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="fluid-container bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Analytical Testing Services</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d olore eu fugiat nulla pariatur.</p>
+              <p><a href="#">> Learn More</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Analytical Testing Services</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d olore eu fugiat nulla pariatur.</p>
+              <p><a href="#">> Learn More</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Analytical Testing Services</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d olore eu fugiat nulla pariatur.</p>
+              <p><a href="#">> Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="h1">MSC brings together top-tier cannabis scientists with leaders in the Canadaian cannabis industry</p>
+            <h2><a href="#">> Meet the team</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="fluid-container bg-primary">
+        <div class="container text-c">
+          <p class="h1">Want to know more?</p>
+          <p class="h1"><a href="#">> Get in touch</a></p>
+        </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container u-padding-x-0"><span>© 2014 Ample Organics Incorporated</span></div>
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="container-fluid footer-container">
+        <div class="container footer-content">
+          <div class="row m-b-lg">
+            <div class="col-md-3">
+              <div class="footer-list">
+                <p> <strong>Molecular Science Corp</strong><br/>123 Address St.<br/>Toronto ON A1A 1A1</p>
+                <p>M-F 9AM-5PM EST<br/>p. 1-800-555-5555<br/>e. info@mscience.ca</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-list">
+                <ul>
+                  <li><a href="#">Footer Link 1</a></li>
+                  <li><a href="#">Second Footer Link</a></li>
+                  <li><a href="#">Short Link</a></li>
+                  <li><a href="#">Another Link</a></li>
+                  <li><a href="#">Last One</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-list">
+                <p>Connect with MSC:<br/>(IMAGES)</p>
+              </div>
+            </div>
+          </div><span>©2017 Molecular Science Corp</span>
+        </div>
+      </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+    <script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/unslider-min.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+      $('.pageQuote-slider').unslider({
+        autoplay: true,
+        delay: 9000,
+        keys: false,
+        arrows: false
+      });
+      $('.features-slider').unslider({
+        keys: false,
+        arrows: false
+      });
+      });
+      
+    </script>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
-  <script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/unslider-min.js"></script>
-  <script>
-    jQuery(document).ready(function($) {
-    $('.pageQuote-slider').unslider({
-      autoplay: true,
-      delay: 9000,
-      keys: false,
-      arrows: false
-    });
-    $('.features-slider').unslider({
-      keys: false,
-      arrows: false
-    });
-    });
-    
-  </script>
   <script>new WOW().init();</script>
 </body>
