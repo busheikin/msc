@@ -2,30 +2,45 @@ script
   | function openNav() {
   |     document.getElementById("navbar-nav").style.width = "100%";
   |     document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+  |     document.getElementById("mainContent").style.opacity = "0.6";
+  |     document.getElementById("navbar").style.opacity = "0.6";
   | }
   | 
   | function closeNav() {
   |     document.getElementById("navbar-nav").style.width = "0px";
   |     document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+  |     document.getElementById("mainContent").style.opacity = "1";
+  |     document.getElementById("navbar").style.opacity = "1";
   | }
-nav.navbar
-  .navbar-container.container
-    .navbar-header
-      .navbar-logo
-        a(href="index.html"): img(src="img/logo.png" alt="Molecular Science Corp")
-      button.navbar-toggle(type="button" onclick="openNav()")
-        span.ion.ion-android-menu
-    .navbar-collapse#navbar-nav.navbar-list-container
-      a.navbar-closeToggle(href="javascript:void(0)" onclick="closeNav()")
-        span.icon.ion.ion-android-close
-      ul.navbar-list#primary-menu
-        li.menu-item
-          a.nav-link(href="index.html") Home
-        li.menu-item
-          a.nav-link(href="about.html") About
-        li.menu-item
-          a.nav-link(href="features.html") Features
-        li.menu-item
-          a.nav-link(href="contact.html") Contact
-        li.menu-item
-          a.nav-link(href="book-demo.html") Demo
+#navbar.navbar
+  .navbar-container
+    .container
+      .navbar-header
+        .navbar-logo
+          a(href="index.html"): img(src="img/logo.png" alt="Molecular Science Corp")
+        button.navbar-toggle(type="button" onclick="openNav()")
+          span.ion.ion-android-menu
+nav.navbar-collapse#navbar-nav.navbar-list-container
+  a.navbar-closeToggle(href="javascript:void(0)" onclick="closeNav()")
+    span.icon.ion.ion-android-close
+  ol.navbar-list#primary-menu
+    li.menu-item
+      a.nav-link(href="index.html")
+        span.nav-link-number 01
+        | Home
+    li.menu-item
+      a.nav-link(href="about.html")
+        span.nav-link-number 02
+        | About
+    li.menu-item
+      a.nav-link(href="features.html")
+        span.nav-link-number 03
+        | Features
+    li.menu-item
+      a.nav-link(href="contact.html")
+        span.nav-link-number 04
+        | Contact
+    li.menu-item
+      a.nav-link(href="book-demo.html")
+        span.nav-link-number 05
+        | Demo

@@ -12,6 +12,11 @@
   right: 0;
   background: $gray-lightest;
   @include clearfix;
+  
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .navbar-logo {
@@ -61,11 +66,10 @@
   padding-right: 2rem;
 }
 
-ul.navbar-list {
+ol.navbar-list {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  background: #fff;
   height: 100%;
   margin-left: auto;
   margin-right: 0;
@@ -97,11 +101,7 @@ ul.navbar-list {
 }
 
 #primary-menu .menu-item {
-  border-bottom: 1px solid rgba(255,255,255,.05);
-}
-
-#primary-menu .menu-item:last-child {
-  border-bottom: 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 
@@ -140,4 +140,24 @@ ul.navbar-list {
     height: 100vh;
     overflow: hidden;
   }
+}
+
+// Fancy number
+
+.nav-link-number {
+  font-size: $font-size-xs;
+  color: rgba(255,255,255,.3);
+  font-weight: $font-weight-normal;
+  margin-right: $spacer-x-xs;
+}
+
+// Darken when menu opens 
+
+.html {
+  body: $gray-dark;
+}
+
+#navbar, #mainContent {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }

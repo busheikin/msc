@@ -94,7 +94,11 @@ $grid-columns:               12;
 $grid-gutter-width:          48px;
 $grid-gutter-outer:          $grid-gutter-width/2;
 $spacer:                     $grid-gutter-width/2;
-$spacer-v:                   $font-size-base;
+$spacer-y:                   $font-size-base;
+$spacer-y-sm:                $font-size-base/2;
+$spacer-x:                   $font-size-base;
+$spacer-x-sm:                $grid-gutter-width/2;
+$spacer-x-xs:                $spacer-x-sm/2;
 
 $screen-xs-min: 0;
 $screen-sm-min: 544px;

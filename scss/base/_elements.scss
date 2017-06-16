@@ -14,7 +14,7 @@ body {
   // Go easy on the eyes and use something other than `#000` for text
   color: $body-font-color;
   // By default, `<body>` has no `background-color` so we set one as a best practice.
-  background-color: $gray-lightest;
+  background-color: $gray-dark; // for navbar fade
   -webkit-font-smoothing: antialiased;
 }
 

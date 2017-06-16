@@ -9,36 +9,42 @@
 </head>
 <body>
   <div id="bodyWrap">
-    <div class="mainContent">
-      <!--NAVBAR-->
-      <script>
-        function openNav() {
-            document.getElementById("navbar-nav").style.width = "100%";
-            document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
-        }
-         
-        function closeNav() {
-            document.getElementById("navbar-nav").style.width = "0px";
-            document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
-        }
-      </script>
-      <nav class="navbar">
-        <div class="navbar-container container">
+    <!--NAVBAR-->
+    <script>
+      function openNav() {
+          document.getElementById("navbar-nav").style.width = "100%";
+          document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+          document.getElementById("mainContent").style.opacity = "0.6";
+          document.getElementById("navbar").style.opacity = "0.6";
+      }
+       
+      function closeNav() {
+          document.getElementById("navbar-nav").style.width = "0px";
+          document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
+          document.getElementById("mainContent").style.opacity = "1";
+          document.getElementById("navbar").style.opacity = "1";
+      }
+    </script>
+    <div id="navbar" class="navbar">
+      <div class="navbar-container">
+        <div class="container">
           <div class="navbar-header">
             <div class="navbar-logo"><a href="index.html"><img src="img/logo.png" alt="Molecular Science Corp"/></a></div>
             <button type="button" onclick="openNav()" class="navbar-toggle"><span class="ion ion-android-menu"></span></button>
           </div>
-          <div id="navbar-nav" class="navbar-collapse navbar-list-container"><a href="javascript:void(0)" onclick="closeNav()" class="navbar-closeToggle"><span class="icon ion ion-android-close"></span></a>
-            <ul id="primary-menu" class="navbar-list">
-              <li class="menu-item"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="menu-item"><a href="about.html" class="nav-link">About</a></li>
-              <li class="menu-item"><a href="features.html" class="nav-link">Features</a></li>
-              <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              <li class="menu-item"><a href="book-demo.html" class="nav-link">Demo</a></li>
-            </ul>
-          </div>
         </div>
-      </nav>
+      </div>
+    </div>
+    <nav id="navbar-nav" class="navbar-collapse navbar-list-container"><a href="javascript:void(0)" onclick="closeNav()" class="navbar-closeToggle"><span class="icon ion ion-android-close"></span></a>
+      <ol id="primary-menu" class="navbar-list">
+        <li class="menu-item"><a href="index.html" class="nav-link"><span class="nav-link-number">01</span>Home</a></li>
+        <li class="menu-item"><a href="about.html" class="nav-link"><span class="nav-link-number">02</span>About</a></li>
+        <li class="menu-item"><a href="features.html" class="nav-link"><span class="nav-link-number">03</span>Features</a></li>
+        <li class="menu-item"><a href="contact.html" class="nav-link"><span class="nav-link-number">04</span>Contact</a></li>
+        <li class="menu-item"><a href="book-demo.html" class="nav-link"><span class="nav-link-number">05</span>Demo</a></li>
+      </ol>
+    </nav>
+    <div id="mainContent">
       <!--MAIN-->
       <div class="container">
         <div class="row">

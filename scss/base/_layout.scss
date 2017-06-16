@@ -2,6 +2,8 @@
   min-height: 100%;
   padding-top: $navbar-height;
   border-top: 4px solid $brand-primary;
+  display: flex;
+  flex-direction: column;
     
   @include media-breakpoint-down(sm){
     padding-top: $navbar-height-mobile;
@@ -9,10 +11,9 @@
 }
 
 
-.mainContent {
-  min-height: 100%;
-  overflow: auto;
-  padding-bottom: $footer-height;
+#mainContent {
+  flex: 1;
+  background: $gray-lightest;
 }
 
 .container-fluid {
