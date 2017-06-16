@@ -1170,7 +1170,7 @@ a {
           flex-direction: column; }
   @media (max-width: 891.9px) {
     #bodyWrap {
-      padding-top: 56px; } }
+      padding-top: 60px; } }
 
 #mainContent {
   -webkit-box-flex: 1;
@@ -2016,7 +2016,6 @@ input[type="search"] {
 
 .navbar-container {
   position: absolute;
-  padding: 0 24px;
   height: 120px;
   left: 0;
   top: 4px;
@@ -2139,6 +2138,18 @@ ol.navbar-list {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
+
+@media (max-width: 891.9px) {
+  .navbar-container {
+    height: 60px; }
+  .navbar-logo img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px; }
+  .navbar-toggle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 60px; } }
 
 .well {
   background: #f5f5f3;

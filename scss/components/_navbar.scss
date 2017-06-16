@@ -5,7 +5,6 @@
 
 .navbar-container {
   position: absolute;
-  padding: 0 $grid-gutter-outer;
   height: $navbar-height;
   left: 0;
   top: 4px;
@@ -160,4 +159,24 @@ ol.navbar-list {
 #navbar, #mainContent {
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+// MOBILE STYLES
+
+@include media-breakpoint-down(sm){
+  .navbar-container {
+    height: $navbar-height-mobile;
+  }
+  
+  .navbar-logo img {
+    margin-top: $navbar-height-mobile/4;
+    margin-bottom: $navbar-height-mobile/4;  
+    height: $navbar-height-mobile/2;
+  }
+  
+  .navbar-toggle {
+    padding-top: $navbar-height-mobile/4;
+    padding-bottom: $navbar-height-mobile/4;
+    height: $navbar-height-mobile;
+  }
 }
