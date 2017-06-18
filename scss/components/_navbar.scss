@@ -51,7 +51,7 @@
   width: 0;
   transition: width .5s ease;
   z-index: $zindex-navbar + 1;
-  max-width: 400px !important;
+  max-width: 420px !important;
 }
 
 .navbar-closeToggle {
@@ -60,9 +60,9 @@
   font-size: $font-size-xl;
   line-height: 1;
   padding-top: ($navbar-height - $font-size-xl)/2;
-  padding-bottom: ($navbar-height - $font-size-xl)/2;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-bottom: ($navbar-height - $font-size-xl)/4;
+  padding-left: $spacer-x;
+  padding-right: $spacer-x;
 }
 
 ol.navbar-list {
@@ -73,18 +73,18 @@ ol.navbar-list {
   margin-left: auto;
   margin-right: 0;
   background: transparent;
-  margin-top: 1rem;
 }
 
 #primary-menu .menu-item > a {
   display: block;
-  padding: 1rem 2rem;
+  padding: $spacer-y $spacer-x;
   font-size: $font-size-lg;
   font-weight: $font-weight-bold;
   color: #fff;
   position: relative;
   left: 0;
   transition: all 0.3s ease;
+  white-space: nowrap;
   
   &:hover {
     text-decoration: none;
@@ -158,7 +158,7 @@ ol.navbar-list {
 
 #navbar, #mainContent {
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 // MOBILE STYLES
@@ -178,5 +178,16 @@ ol.navbar-list {
     padding-top: $navbar-height-mobile/4;
     padding-bottom: $navbar-height-mobile/4;
     height: $navbar-height-mobile;
+  }  
+  
+  .navbar-closeToggle {
+    padding-top: $navbar-height-mobile/4;
+    padding-bottom: $navbar-height-mobile/4;
+    padding-left: $spacer-x;
+    height: $navbar-height-mobile;
+  }
+  
+  #primary-menu .menu-item > a {
+    font-size: $font-size-base;
   }
 }

@@ -16,6 +16,8 @@
   background: $gray-lightest;
 }
 
-.container-fluid {
-  width: 100%;
+.col-control-mobile {
+  @include media-breakpoint-down(sm){
+    margin-bottom: $spacer-y-xl;
+  }
 }

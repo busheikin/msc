@@ -63,7 +63,7 @@ $display2-weight:             300;
 $display3-weight:             300;
 $display4-weight:             300;
 
-$line-height:                1.5;
+$line-height:                1.4;
 $line-height-lg:             (4/3);
 $line-height-sm:             1.2;
 
@@ -96,8 +96,12 @@ $grid-gutter-outer:          $grid-gutter-width/2;
 $spacer:                     $grid-gutter-width/2;
 $spacer-y:                   $font-size-base;
 $spacer-y-sm:                $font-size-base/2;
+$spacer-y-lg:                $font-size-base*2;
+$spacer-y-xl:                $font-size-base*3;
+
 $spacer-x:                   $font-size-base;
-$spacer-x-sm:                $grid-gutter-width/2;
+$spacer-x-sm:                $spacer-x/2;
+$spacer-x-lg:                $spacer-x*2;
 $spacer-x-xs:                $spacer-x-sm/2;
 
 $screen-xs-min: 0;

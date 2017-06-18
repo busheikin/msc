@@ -1,0 +1,39 @@
+extends _page-template.jade
+
+block title
+  | About Us
+
+block body
+  section.bg-white
+    .container
+      .row
+        .col-md-6.col-md-push-6.m-b
+          img(src="http://placehold.it/800x400")
+        .col-md-6.col-md-pull-6
+          h1 About MSC
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d olore eu fugiat nulla pariatur.
+  section
+    .container
+      h3.text-c Our Executive Team
+      .row.m-b-xl
+        mixin teamMember
+          .col-md-3.col-control-mobile
+            .team-card
+              .team-card-img
+                img(src="http://placehold.it/100x100")
+              .team-card-text
+                p.team-name Team Member
+                p.team-title Member's Title
+                .team-bio 
+                  p Lorem ipsum dolor sit amet, quo suas congue posidonium ei. Duo inani constituto consequuntur at, ne quo tritani mentitum reprimique. No sonet possit vel, erat viris mandamus vim cu. Mei quas habemus cu.
+        +teamMember
+        +teamMember
+        +teamMember
+        +teamMember
+      h3.text-c.m-t Our Science Team
+      .row
+        +teamMember
+        +teamMember
+        +teamMember
+        +teamMember
+  include _call-to-action.jade
