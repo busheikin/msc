@@ -2357,6 +2357,10 @@ ol.navbar-list {
 .team-bio p:last-child {
   margin-bottom: 0; }
 
+.contact-info {
+  border-left: 4px solid #f5f5f3;
+  padding-left: 16px; }
+
 .social-links .social-link {
   margin-right: 8px; }
 .social-links .social-link img {
