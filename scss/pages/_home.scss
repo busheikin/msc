@@ -1,3 +1,20 @@
+.home-hero-img {
+  margin-bottom: $spacer-y;
+  
+  
+  img {
+    height: 200px;
+    
+    @include media-breakpoint-up(lg){
+      height: 400px;
+    }
+
+    @include media-breakpoint-up(lg){
+      height: 400px;
+    }
+  }
+}
+
 .social-links {
   
   .social-link {

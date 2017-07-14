@@ -2184,6 +2184,17 @@ ol.navbar-list {
   border-left: 4px solid #f5f5f3;
   padding-left: 16px; }
 
+.home-hero-img {
+  margin-bottom: 16px; }
+  .home-hero-img img {
+    height: 200px; }
+    @media (min-width: 1260px) {
+      .home-hero-img img {
+        height: 400px; } }
+    @media (min-width: 1260px) {
+      .home-hero-img img {
+        height: 400px; } }
+
 .social-links .social-link {
   margin-right: 8px; }
 
