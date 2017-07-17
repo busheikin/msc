@@ -13,6 +13,7 @@
 @import "variables";
 
 // Mixins
+@import "mixins/mixins";
 @import "mixins/breakpoints";
 @import "mixins/buttons";
 @import "mixins/clearfix";
@@ -46,3 +47,4 @@
 @import "pages/contact";
 @import "pages/home";
 @import "pages/page";
+@import "pages/testing";

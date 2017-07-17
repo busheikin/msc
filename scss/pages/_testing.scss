@@ -1,0 +1,14 @@
+.logo-ampleOrganics {
+  margin-bottom: $spacer-y;
+  text-align: center;
+  background: #fff;
+  padding: $spacer*2;
+  border-radius: 1000px;
+  @include shadow;
+  
+  
+  img {
+    width: 186px;
+  }
+}
+

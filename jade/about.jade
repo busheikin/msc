@@ -20,7 +20,7 @@ block body
           .col-md-4.col-control-mobile
             .team-card
               .team-card-img
-                img(src!=attributes.src)
+                img(src!=attributes.src alt!=(name + ", " + title) )
               .team-card-text
                 p.team-name= name
                 p.team-title= title
