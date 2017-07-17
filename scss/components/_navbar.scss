@@ -4,11 +4,7 @@
 // First off, the actual bar
 
 .navbar-container {
-  position: absolute;
   height: $navbar-height;
-  left: 0;
-  top: 4px;
-  right: 0;
   background: $gray-lightest;
   @include clearfix;
   
