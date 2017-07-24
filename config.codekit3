@@ -9,10 +9,28 @@
 	],
 "creatorBuild": "25849",
 "files": {
-	"\/about.html": {
+	"\/about-msc.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/about.html",
+		"oAP": "\/about-msc.html",
+		"oF": 0
+		},
+	"\/analytical-testing-services.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/analytical-testing-services.html",
+		"oF": 0
+		},
+	"\/cannabinoid-science.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/cannabinoid-science.html",
+		"oF": 0
+		},
+	"\/cannabis-genetics.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/cannabis-genetics.html",
 		"oF": 0
 		},
 	"\/contact.html": {
@@ -20,6 +38,91 @@
 		"oA": 2,
 		"oAP": "\/contact.html",
 		"oF": 0
+		},
+	"\/favicon\/android-chrome-144x144.png": {
+		"ft": 32768,
+		"iS": 6466,
+		"oA": 0,
+		"oAP": "\/favicon\/android-chrome-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 6188,
+		"oA": 0,
+		"oAP": "\/favicon\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/favicon\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1007,
+		"oA": 0,
+		"oAP": "\/favicon\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1423,
+		"oA": 0,
+		"oAP": "\/favicon\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon\/favicon.ico",
+		"oF": 0
+		},
+	"\/favicon\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/favicon\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/favicon\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 6329,
+		"oA": 0,
+		"oAP": "\/favicon\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/favicon\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/fonts\/apercu-bold-webfont.eot": {
 		"ft": 8192,
@@ -217,12 +320,6 @@
 		"oAP": "\/fonts\/apercu-regular-webfont.woff",
 		"oF": 0
 		},
-	"\/genetics.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/genetics.html",
-		"oF": 0
-		},
 	"\/img\/icon-cannabinoid.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -233,11 +330,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icon-cannabis.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-cannabis.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icon-capsule.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/icon-capsule.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-custom-genetics.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-custom-genetics.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -258,6 +375,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-genes.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-genes.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -293,6 +420,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icon-research.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-research.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-testing.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-testing.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icon-twitter.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -303,14 +450,46 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/img-ample-organics.png": {
+		"ft": 32768,
+		"iS": 14918,
+		"oA": 0,
+		"oAP": "\/img\/img-ample-organics.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/img-msc-team.jpg": {
+		"ft": 16384,
+		"iS": 112943,
+		"oA": 0,
+		"oAP": "\/img\/img-msc-team.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/logo-ample-organics.png": {
+		"ft": 32768,
+		"iS": 20546,
+		"oA": 0,
+		"oAP": "\/img\/logo-ample-organics.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 7464,
 		"oA": 0,
 		"oAP": "\/img\/logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -324,11 +503,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/team-cesare-fazari.jpg": {
+		"ft": 16384,
+		"iS": 62368,
+		"oA": 0,
+		"oAP": "\/img\/team-cesare-fazari.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/team-frank-bellotti.jpg": {
 		"ft": 16384,
 		"iS": 49346,
 		"oA": 0,
 		"oAP": "\/img\/team-frank-bellotti.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/team-howard-goldman.jpg": {
+		"ft": 16384,
+		"iS": 51898,
+		"oA": 0,
+		"oAP": "\/img\/team-howard-goldman.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -382,11 +581,35 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/about.jade": {
+	"\/jade\/about-msc.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/about.html",
+		"oAP": "\/about-msc.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/analytical-testing-services.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/analytical-testing-services.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/cannabinoid-science.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/cannabinoid-science.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/cannabis-genetics.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/cannabis-genetics.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -398,14 +621,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/genetics.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/genetics.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/jade\/index.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -414,40 +629,18 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/products.jade": {
+	"\/jade\/product-development-and-sales.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/products.html",
+		"oAP": "\/product-development-and-sales.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/science.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/science.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/jade\/testing.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/testing.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/products.html": {
+	"\/product-development-and-sales.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/products.html",
-		"oF": 0
-		},
-	"\/science.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/science.html",
+		"oAP": "\/product-development-and-sales.html",
 		"oF": 0
 		},
 	"\/scss\/.sass-cache\/42df6e4ffce4eccdd63c22eba047115452a2becb\/_buttons.scssc": {
@@ -919,6 +1112,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/mixins\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/mixins\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/pages\/_about.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -971,8 +1177,31 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/style.scss": {
+	"\/scss\/pages\/_testing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/pages\/_testing.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/style.css": {
 		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/scss\/style.scss": {
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -980,7 +1209,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/style.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
@@ -992,13 +1221,7 @@
 		"oA": 0,
 		"oAP": "\/style-min.css",
 		"oF": 0,
-		"oS": 0
-		},
-	"\/testing.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/testing.html",
-		"oF": 0
+		"oS": 3
 		}
 	},
 "hooks": [

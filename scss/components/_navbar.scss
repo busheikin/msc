@@ -18,11 +18,13 @@
   display: inline-block;
 }
 
+$logo-height: 50px;
+
 .navbar-logo img {
   display: inline-block;
-  margin-top: $navbar-height/3;
-  margin-bottom: $navbar-height/3;  
-  height: $navbar-height/3;
+  margin-top: ($navbar-height - $logo-height)/2;
+  margin-bottom: ($navbar-height - $logo-height)/2;  
+  height: $logo-height;
 }
 
 .navbar-header {
