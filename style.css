@@ -2381,6 +2381,14 @@ ol.navbar-list {
 .page-feature-img {
   margin-bottom: 16px;
   text-align: center; }
+  .page-feature-img img {
+    height: 128px; }
+
+.page-img-main {
+  margin-bottom: 16px;
+  text-align: center; }
+  .page-img-main img {
+    height: 120px; }
 
 .logo-ampleOrganics {
   margin-bottom: 16px;
