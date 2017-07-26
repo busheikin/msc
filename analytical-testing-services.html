@@ -20,21 +20,6 @@
 <body>
   <div id="bodyWrap">
     <!--NAVBAR-->
-    <script>
-      function openNav() {
-          document.getElementById("navbar-nav").style.width = "100%";
-          document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
-          document.getElementById("mainContent").style.opacity = "0.6";
-          document.getElementById("navbar").style.opacity = "0.6";
-      }
-       
-      function closeNav() {
-          document.getElementById("navbar-nav").style.width = "0px";
-          document.getElementById("bodyWrap").classList.toggle("nav-noscroll");
-          document.getElementById("mainContent").style.opacity = "1";
-          document.getElementById("navbar").style.opacity = "1";
-      }
-    </script>
     <div id="navbar" class="navbar">
       <div class="navbar-container">
         <div class="container">
@@ -111,6 +96,7 @@
         </div>
       </div>
     </div>
+    <script src="js/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
     <script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
