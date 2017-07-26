@@ -2050,9 +2050,9 @@ ol.navbar-list {
 
 .navbar-toggle {
   font-size: 28px;
-  padding: 16px;
+  padding: 16px 0;
   line-height: 1;
-  background: #fff;
+  background: transparent;
   border: 0;
   position: absolute;
   right: 0;
@@ -2073,7 +2073,7 @@ ol.navbar-list {
   position: absolute;
   right: 0;
   top: 0;
-  padding-top: 50px; }
+  padding: 50px 0; }
   @media (max-width: 891.9px) {
     .navbar-toggle-container {
       padding-top: 0;
