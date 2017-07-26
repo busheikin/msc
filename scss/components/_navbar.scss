@@ -14,17 +14,17 @@
   }
 }
 
+$navbar-logo-height: 50px;
+
 .navbar-logo {
   display: inline-block;
 }
 
-$logo-height: 50px;
-
 .navbar-logo img {
   display: inline-block;
-  margin-top: ($navbar-height - $logo-height)/2;
-  margin-bottom: ($navbar-height - $logo-height)/2;  
-  height: $logo-height;
+  margin-top: ($navbar-height - $navbar-logo-height)/2;
+  margin-bottom: ($navbar-height - $navbar-logo-height)/2;  
+  height: $navbar-logo-height;
 }
 
 .navbar-header {
