@@ -2158,6 +2158,7 @@ ol.navbar-list {
   margin-bottom: 0; }
 
 .bio-expand-button {
+  padding-top: 12px;
   display: block;
   text-align: center; }
 
