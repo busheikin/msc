@@ -4,8 +4,9 @@
       .navbar-header
         .navbar-logo
           a(href="index.html"): img(src="img/msc-logo-horizontal.svg" alt="Molecular Science Corp")
-        button.navbar-toggle(type="button" onclick="openNav()")
-          span.ion.ion-android-menu
+        .navbar-toggle-container
+          button.navbar-toggle(type="button" onclick="openNav()")
+            span.ion.ion-android-menu
 nav.navbar-collapse#navbar-nav.navbar-list-container
   a.navbar-closeToggle(href="javascript:void(0)" onclick="closeNav()")
     span.icon.ion.ion-android-close

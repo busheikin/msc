@@ -11,10 +11,14 @@
   .container {
     padding-top: 0;
     padding-bottom: 0;
+    
+    @include media-breakpoint-down(sm) {
+      padding-right: 0;
+    }
   }
 }
 
-$navbar-logo-height: 50px;
+$navbar-logo-height: 70px;
 
 .navbar-logo {
   display: inline-block;
@@ -107,26 +111,43 @@ ol.navbar-list {
 // Custom button for toggling the `.navbar-collapse`, powered by the collapse
 // Bootstrap JavaScript plugin.
 
+$navbar-toggle-size: 60px;
+
 .navbar-toggle {
-  padding: .5rem .75rem;
   font-size: $font-size-xl;
+  padding: ($navbar-toggle-size - $font-size-xl)/2;
   line-height: 1;
-  padding-top: ($navbar-height - $font-size-xl)/2;
-  padding-bottom: ($navbar-height - $font-size-xl)/2;
-  padding-left: 0;
-  padding-right: 0;
-  background: none;
+  background: #fff;
   border: 0;
-  height: $navbar-height;
   position: absolute;
   right: 0;
-  color: $brand-primary;
+  color: $brand-dark;
   transition: color 0.2s ease;
   outline: none !important;
+  height: $navbar-toggle-size;
+  width: $navbar-toggle-size;
   
   &[aria-expanded="true"]{
     color: $brand-primary;
   }
+  
+  @include media-breakpoint-down(sm) {
+    height:($navbar-height-mobile - $font-size-xl)/2
+  }
+}
+
+.navbar-toggle-container {
+  display: inline-block;
+  height: $navbar-height;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: ($navbar-height - $navbar-toggle-size)/2;
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+    height: $navbar-height-mobile;
+  }
+
 }
 
 

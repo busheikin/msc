@@ -24,8 +24,10 @@
       <div class="navbar-container">
         <div class="container">
           <div class="navbar-header">
-            <div class="navbar-logo"><a href="index.html"><img src="img/logo.png" alt="Molecular Science Corp"/></a></div>
-            <button type="button" onclick="openNav()" class="navbar-toggle"><span class="ion ion-android-menu"></span></button>
+            <div class="navbar-logo"><a href="index.html"><img src="img/msc-logo-horizontal.svg" alt="Molecular Science Corp"/></a></div>
+            <div class="navbar-toggle-container">
+              <button type="button" onclick="openNav()" class="navbar-toggle"><span class="ion ion-android-menu"></span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -59,7 +61,7 @@
           <div class="row m-b-xl">
                         <div class="col-md-4 col-control-mobile">
                           <div class="team-card">
-                            <div class="team-card-img"><img src="http://placehold.it/100x100" alt="Scott Walters, CEO"/></div>
+                            <div class="team-card-img"><img src="img/team-scott-walters.jpg" alt="Scott Walters, CEO"/></div>
                             <div class="team-card-text">
                               <p class="team-name">Scott Walters</p>
                               <p class="team-title">CEO</p>
@@ -121,40 +123,19 @@
                         </div>
                         <div class="col-md-4 col-control-mobile">
                           <div class="team-card">
-                            <div class="team-card-img"><img src="http://placehold.it/100x100" alt="Dr. Igor Kovalchuk, MD, Ph.D., President"/></div>
+                            <div class="team-card-img"><img src="img/team-steven-rothstein.jpg" alt="Dr. Steven Rothstein, Chief Science Officer"/></div>
                             <div class="team-card-text">
-                              <p class="team-name">Dr. Igor Kovalchuk, MD, Ph.D.</p>
-                              <p class="team-title">President</p>
+                              <p class="team-name">Dr. Steven Rothstein</p>
+                              <p class="team-title">Chief Science Officer</p>
                               <div class="team-bio"> 
+                                <p>Dr. Steven Rothstein received his PhD from the University of Wisconsin and did his postdoctoral training in Cambridge UK at the Plant Breeding Institute.  He then was a Senior Scientist for Ciba Geigy in their Agricultural Biotechnology Research Unit located at the Research Triangle Park, North Carolina.   After this, Dr. Rothstein was recruited to be the Pioneer Hi-Bred Industrial Research Chair in Plant Molecular Biology at the University of Guelph where later he also served as Chair of the Department of Molecular Biology and Genetics. </p>
+                                <p id="stevenMore" class="collapse bio-collapse">Later Dr. Rothstein returned to the private sector, working for Pioneer Hi-Bred as the Research Director for Agronomic Traits where he was in charge of a number of areas including the development of the techniques for utilizing genomic information to improve the efficiency of plant breeding selection and also developing corn lines with improved drought tolerance.  Dr. Rothstein returned to the University of Guelph in 2002 where he is the University Research Chair in Plant Molecular Genetics and Professor in the Department of Molecular and Cellular Biology.  Dr. Rothstein is a recognized international expert in the field of Plant Genetics and in particular developing an understanding of how crop plants respond to environmental stress like drought as well as the use of genomic information to study these problems.  He has published over 130 peer reviewed research articles and been an inventor on over 15 patents. </p><a role="button" data-toggle="collapse" href="#stevenMore" aria-expanded="false" aria-controls="stevenMore" class="bio-expand-button"><span class="ion bio-expand-icon"></span></a>
                               </div>
                             </div>
                           </div>
                         </div>
           </div>
           <div class="row m-b-xl">
-                        <div class="col-md-4 col-control-mobile">
-                          <div class="team-card">
-                            <div class="team-card-img"><img src="http://placehold.it/100x100" alt="Dr. Darryl Hudson, Ph.D., Chief Science Advisor"/></div>
-                            <div class="team-card-text">
-                              <p class="team-name">Dr. Darryl Hudson, Ph.D.</p>
-                              <p class="team-title">Chief Science Advisor</p>
-                              <div class="team-bio"> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-control-mobile">
-                          <div class="team-card">
-                            <div class="team-card-img"><img src="img/team-steven-rothstein.jpg" alt="Dr. Steven Rothstein, Chief Science Officer"/></div>
-                            <div class="team-card-text">
-                              <p class="team-name">Dr. Steven Rothstein</p>
-                              <p class="team-title">Chief Science Officer</p>
-                              <div class="team-bio"> 
-                                <p>Dr. Steven Rothstein received his PhD from the University of Wisconsin and did his postdoctoral training in Cambridge UK at the Plant Breeding Institute.  He then was a Senior Scientist for Ciba Geigy in their Agricultural Biotechnology Research Unit located at the Research Triangle Park, North Carolina.   After this, Dr. Rothstein was recruited to be the Pioneer Hi-Bred Industrial Research Chair in Plant Molecular Biology at the University of Guelph where later he also served as Chair of the Department of Molecular Biology and Genetics.  Later Dr. Rothstein returned to the private sector, working for Pioneer Hi-Bred as the Research Director for Agronomic Traits where he was in charge of a number of areas including the development of the techniques for utilizing genomic information to improve the efficiency of plant breeding selection and also developing corn lines with improved drought tolerance.  Dr. Rothstein returned to the University of Guelph in 2002 where he is the University Research Chair in Plant Molecular Genetics and Professor in the Department of Molecular and Cellular Biology.  Dr. Rothstein is a recognized international expert in the field of Plant Genetics and in particular developing an understanding of how crop plants respond to environmental stress like drought as well as the use of genomic information to study these problems.  He has published over 130 peer reviewed research articles and been an inventor on over 15 patents.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div class="col-md-4 col-control-mobile">
                           <div class="team-card">
                             <div class="team-card-img"><img src="img/team-ian-morton.jpg" alt="Ian Morton, General Manager"/></div>
@@ -170,6 +151,14 @@
           </div>
         </div>
       </section>
+      <script>
+        document.getElementsByClassName("expand-button").addEventListener("click", changeIcon);
+        
+        function changeIcon(){
+          document.getElementById("demo").innerHTML = Date();
+        }
+        
+      </script>
       <div class="bg-primary">
         <div class="container text-c">
           <p class="h1">Want to know more? <a href="contact.html" class="nowrap">Get in touch.</a></p>
